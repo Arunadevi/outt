@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel">
+                <div class="panel-heading">
+                    <h1><b>{{friends.length}} Friends</b></h1>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="form-group col-md-3">
+                            <input type="text" ng-model="friend" class="form-control" ng-enter="add()">
+                        </div>
+                        <div class="form-group col-md-3" >
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search" ng-model="searchTerm">
+                        </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li class="list-group-item" ng-repeat="friend in friends | filter:searchTerm track by $id(friend) ">
+                            <div class="row">
+                                <span class="col-md-1">{{$index + 1}}</span>
+                                <div class="col-md-3">
+                                    {{friend.name}}
+                                </div>
+                                <div class="action-buttons col-md-4">
+                                    <a ng-click="remove(friend)" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

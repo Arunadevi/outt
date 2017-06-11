@@ -1,0 +1,38 @@
+{
+  "name": "AngularJS Boilerplate",
+  "version": "1.3.0",
+  "authors": [
+    "jozef butko <jbutko@gmail.com> / jozefbutko.com/resume"
+  ],
+  "description": "Description goes here",
+  "main": "app.js",
+  "keywords": [
+    "angularjs"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jbutko/AngularJS-Boilerplate",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.13",
+    "angular-route": "~1.3.13",
+    "angular-sanitize": "~1.3.13",
+    "OwlCarousel": "https://github.com/OwlFonk/OwlCarousel.git#~1.3.2"
+  },
+  "_release": "1.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.3.0",
+    "commit": "13549cc566a3262fe64e21fe6b86460658da570c"
+  },
+  "_source": "https://github.com/jbutko/AngularJS-Boilerplate.git",
+  "_target": "^1.3.0",
+  "_originalSource": "angularjs-boilerplate",
+  "_direct": true
+}
