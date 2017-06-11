@@ -8,7 +8,7 @@
 (function() {
 
   angular
-    .module('boilerplate')
+    .module('outt')
     .controller('MainController', MainController);
 
   MainController.$inject = ['$scope'];
